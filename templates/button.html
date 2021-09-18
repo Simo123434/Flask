@@ -4,11 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
+    <title>button</title>
 </head>
 <script type="text/javascript" src="{{url_for('static', filename='index.js')}}"></script>
 <body>
-    <div><h2>Home Page</h2></div>
-    <div><p>hello there {{var}}</p></div> <!-- use double curly braces to use variable from views.py-->
+    <div><h2>button Page</h2></div>
+    <form method="post" action="/buttons/">
+        <input type="submit" value="B1clicked" name="Button1"/>
+    </form>
 </body>
 </html>
